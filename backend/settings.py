@@ -41,14 +41,14 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
-    logo: Optional[str] = None
-    chat_logo: Optional[str] = None
-    chat_title: str = "Start chatting"
-    chat_description: str = "This chatbot is configured to answer your questions"
+    title: str = "SET THE UI_TITLE ENV VAR"
+    logo: Optional[str] = "https://www.appliedtech.us/wp-content/uploads/2025/01/AT-Horizontal-Logo-800-x-250-px.png"
+    chat_logo: Optional[str] = "https://www.appliedtech.us/wp-content/uploads/2025/01/AT-Horizontal-Logo-800-x-250-px.png"
+    chat_title: str = "Start chatting" #set UI_CHAT_TITLE ENV Var if you want to change this
+    chat_description: str = "UPDATE UI_CHAT_DESCRIPTION ENV VAR"
     favicon: str = "/favicon.ico"
-    show_share_button: bool = True
-    show_chat_history_button: bool = True
+    show_share_button: bool = False
+    show_chat_history_button: bool = False
 
 
 class _ChatHistorySettings(BaseSettings):
